@@ -1,14 +1,11 @@
 import React from "react";
+import Card from "./Card";
 
 const Result = ({ results }) => {
   return (
-    <div>
-       {results.map((result) => (
-        <div key={result.id} style={{ marginBottom: "10px" }}>
-          <h2>{result.original_title || result.name}</h2>
-          {/* <p>{result.overview}</p>
-          <p>Release Date: {result.release_date || result.first_air_date}</p> */}
-        </div>
+    <div className="sm:grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 max-w-6xl mx-auto py-4 gap-4">
+      {results.map((result) => (
+        <Card key={result.id} result={result} />
       ))}
     </div>
   );

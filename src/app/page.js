@@ -24,7 +24,7 @@ const Home = async ({ searchParams }) => {
   // Hide the loader after a small delay
   setTimeout(() => {
     loaderVisible = false; // Hide loader after timeout
-  }, 2000); // Set the timeout to hide the loader after 500ms (adjust as needed)
+  }, 20000); // Set the timeout to hide the loader after 500ms (adjust as needed)
 
   return( 
   <div>
