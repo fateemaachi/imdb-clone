@@ -6,7 +6,7 @@ const Home = async ({ searchParams }) => {
   const genre = searchParams.genre || "fetchTrending";
 
   // Add a loading state with a timeout
-  let loaderVisible = true;
+  // let loaderVisible = true;
   
   const res = await fetch(
     `https://api.themoviedb.org/3${
@@ -22,9 +22,9 @@ const Home = async ({ searchParams }) => {
   console.log(results)
 
   // Hide the loader after a small delay
-  setTimeout(() => {
-    loaderVisible = false; // Hide loader after timeout
-  }, 20000); // Set the timeout to hide the loader after 500ms (adjust as needed)
+  // setTimeout(() => {
+  //   loaderVisible = false; // Hide loader after timeout
+  // }, 20000); // Set the timeout to hide the loader after 500ms (adjust as needed)
 
   return( 
   <div>
